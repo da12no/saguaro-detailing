@@ -30,7 +30,7 @@ exports.handler = async (event) => {
     method: 'POST',
     headers,
     body: JSON.stringify({
-      sender: { name: 'Saguaro Mobile Car Detailing', email: 'hello@saguaromobilecardetailing.com' },
+      sender: { name: 'Saguaro Mobile Car Detailing', email: 'arizonamobilecardetailing@gmail.com' },
       to: [{ email, name }],
       subject: subject || 'Your Booking is Confirmed - Saguaro Mobile Car Detailing',
       htmlContent,
@@ -48,7 +48,7 @@ exports.handler = async (event) => {
       method: 'POST',
       headers,
       body: JSON.stringify({
-        sender: { name: 'Saguaro Booking System', email: 'hello@saguaromobilecardetailing.com' },
+        sender: { name: 'Saguaro Booking System', email: 'arizonamobilecardetailing@gmail.com' },
         to: [{ email: 'arizonamobilecardetailing@gmail.com', name: 'Saguaro Mobile Car Detailing' }],
         subject: `New Booking: ${name} — ${notifyBusiness.service}`,
         htmlContent: notifyBusiness.html,
